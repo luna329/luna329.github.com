@@ -38,5 +38,28 @@
 			</div>
 		</div>
 	</div>
+	<a id="open" href="music.html">open</a>
+	<a href="music/bk.mp3">Play Sound</a>
+
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script src="http://mediaplayer.yahoo.com/latest"></script>
+
+
+<!-- 	<audio autoplay="true" preload="none">
+	  <source src="music/bk.mp3" type="audio/mpeg" >
+		Your browser does not support the audio element.
+	</audio> -->
+	<script type="text/javascript">
+		$('#open').click(function(){
+			h = $(window).height();
+			w = $(window).width();
+			l = w - 150;
+			t = h - 10;
+			music = window.open('music.html', 'Music', 'height=10,width=300,left=' + l + ',top=' + t)
+			focus();
+		});
+
+		$('#open').click();
+	</script>
 </body>
 </html>
